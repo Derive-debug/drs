@@ -1,0 +1,32 @@
+# Data directories — never needed inside Docker (data lives in Supabase)
+data/
+data/raw/
+data/clean/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Secrets (never in image)
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
+
+# Tests / tmp
+/tmp/
+*.log

@@ -1,0 +1,873 @@
+{
+  "version": "v1",
+  "mode": "llm",
+  "site_context": {
+    "domain": "drleo.com",
+    "locales": [
+      {
+        "hreflang": "x-default",
+        "prefix": "",
+        "country": "US",
+        "language": "en"
+      },
+      {
+        "hreflang": "en",
+        "prefix": "",
+        "country": "US",
+        "language": "en"
+      },
+      {
+        "hreflang": "es",
+        "prefix": "/es",
+        "country": "GLOBAL",
+        "language": "es"
+      },
+      {
+        "hreflang": "en-MX",
+        "prefix": "/en-mx",
+        "country": "MX",
+        "language": "en"
+      },
+      {
+        "hreflang": "es-MX",
+        "prefix": "/es-mx",
+        "country": "MX",
+        "language": "es"
+      }
+    ],
+    "url_patterns": {
+      "pdp": "/products/{handle}",
+      "collection_pdp": "/collections/{collection}/products/{handle}"
+    }
+  },
+  "target_query_framework": {
+    "target_keywords": [
+      "salicylic acid",
+      "niacinamide",
+      "benzoyl peroxide",
+      "retinol",
+      "acne treatment",
+      "cystic acne",
+      "fungal acne",
+      "hormonal acne",
+      "acne scars",
+      "blackheads",
+      "acne spot treatment",
+      "niacinamide serum",
+      "face wash",
+      "moisturizer for oily skin",
+      "sunscreen for face",
+      "retinol cream",
+      "mineral sunscreen",
+      "hyaluronic acid serum",
+      "vitamin c serum",
+      "face mask"
+    ],
+    "actual_queries": [
+      "dr leo",
+      "dr leo salicylic acid",
+      "dr leo drying lotion",
+      "dr.leo",
+      "dr. leo",
+      "dr leo salicylic acid acne treatment",
+      "dr leo acne buster",
+      "dr leo acne treatment",
+      "dr leo skin care"
+    ],
+    "gap_keywords": [
+      "niacinamide",
+      "benzoyl peroxide",
+      "retinol",
+      "tea tree oil",
+      "vitamin c serum",
+      "sunscreen",
+      "face mask",
+      "moisturizer",
+      "jojoba oil",
+      "argan oil and",
+      "mineral oil",
+      "argan oil",
+      "niacinamide serum",
+      "benzoyl peroxide benzoyl peroxide",
+      "bacne benzoyl peroxide",
+      "serum",
+      "mineral sunscreen",
+      "retinol a retinol",
+      "best vitamin c serum",
+      "and retinol"
+    ]
+  },
+  "source": {
+    "keyword": "salicylic acid",
+    "intent": "brand",
+    "page": "https://drleo.com/products/salicylic-acid-acne-clear-trio",
+    "serp_context_available": true
+  },
+  "strategy": {
+    "goal": "US 优先：用 Top5 PDP/Collection 承接市场高需求（target/gap）+ 自站已有查询（actual），4 周内提升可引用答案密度、CTR 与转化辅助。",
+    "intent": "brand",
+    "priority": "P0: Top5 页面内容与结构化数据；P1: 内链与信息架构；P2: 监控与迭代",
+    "rationale": "facts 显示目标词为 salicylic acid，且存在计划关键词样本与市场候选词；在不编造产品细节的前提下，先把首屏答案、对比表、FAQ、Schema 做到位。"
+  },
+  "top_pages_ranked": [
+    {
+      "rank": 1,
+      "page_type": "pdp",
+      "page_us": "https://drleo.com/products/salicylic-acid-acne-clear-trio",
+      "hreflang_map": {
+        "x-default": "https://drleo.com/products/salicylic-acid-acne-clear-trio",
+        "en": "https://drleo.com/products/salicylic-acid-acne-clear-trio",
+        "es": "[[SOURCE_REQUIRED]]",
+        "en-MX": "[[SOURCE_REQUIRED]]",
+        "es-MX": "[[SOURCE_REQUIRED]]"
+      },
+      "why_this_page": "该 URL 来自 facts 中的站内页面清单；为 salicylic acid 相关产品页，适合作为 US 转化承接页进行 SEO+GEO 强化。",
+      "target_keywords": [
+        "salicylic acid",
+        "salicylic acid",
+        "niacinamide",
+        "benzoyl peroxide",
+        "retinol",
+        "acne treatment",
+        "cystic acne",
+        "fungal acne",
+        "hormonal acne",
+        "acne scars",
+        "blackheads"
+      ],
+      "actions": {
+        "hero_answer": {
+          "before": "[[CURRENT_HERO_COPY_REQUIRED]]",
+          "after": "US 用户常见问题：salicylic acid 适合什么肤质、如何开始、怎么避免刺激？\n这里提供可执行的基础 routine 框架（Cleanse → Treat → Moisturize → SPF），并把关键注意事项放在首屏。\n具体产品/用量/频率需以站内说明确认：[[SOURCE_REQUIRED]]",
+          "rationale": "用“先回答再引导”提升首屏相关性；把不确定的产品细节显式标记为需要来源，避免编造。"
+        },
+        "modules_checklist": [
+          "Hero 直接回答",
+          "对比表（Comparison tables）",
+          "FAQ（含 GEO 可引用答案）",
+          "HowTo / 使用步骤",
+          "Schema（FAQPage/HowTo/BreadcrumbList）",
+          "内部链接（Internal links）"
+        ],
+        "comparison_tables": [
+          {
+            "table_id": "tbl-pdp-1",
+            "purpose": "在 PDP 上用表格解释“这个产品/套组适合谁、如何搭配、替代方案是什么”，减少跳出并提升转化辅助",
+            "placement": "PDP 详情页：成分/用法模块之后，FAQ 之前",
+            "columns": [
+              "你在找什么",
+              "这款产品能提供什么",
+              "如何使用",
+              "不适合/注意",
+              "需要确认的数据"
+            ],
+            "rows": [
+              "控油与毛孔堵塞",
+              "黑头/闭口",
+              "点涂急救",
+              "与其他活性叠加",
+              "孕期/敏感肌"
+            ],
+            "data_requirements": [
+              "产品核心卖点与成分/含量（来自该 PDP）[[SOURCE_REQUIRED]]",
+              "使用步骤与频率（来自该 PDP/说明）[[SOURCE_REQUIRED]]",
+              "警示/禁忌（来自该 PDP/说明）[[SOURCE_REQUIRED]]"
+            ],
+            "render_notes": "行文避免承诺“治愈/消除/永久”；用“帮助减少/支持/可能改善”。"
+          }
+        ],
+        "faq_blocks": [
+          {
+            "question": "salicylic acid 和 benzoyl peroxide 的区别是什么？（US 用户最常问）",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "怎么把 salicylic acid 加入日常 routine（频率/顺序）？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "敏感肌/屏障受损时是否需要暂停活性？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          }
+        ],
+        "internal_links": [
+          {
+            "target": "https://drleo.com/pages/faqs",
+            "anchor_text": "FAQ / 常见问题",
+            "reason": "补足 first-party Q&A，提升可引用答案密度"
+          },
+          {
+            "target": "https://drleo.com/collections/acne-breakouts",
+            "anchor_text": "Acne & Breakouts 系列",
+            "reason": "建立从科普到购买的路径（US）"
+          }
+        ],
+        "schema": [
+          "FAQPage",
+          "BreadcrumbList",
+          "HowTo"
+        ],
+        "localization_tasks": [
+          {
+            "locale": "en",
+            "task": "US 主站（en）内容优先：确保首屏/FAQ/对比表覆盖目标词与用户问题词。",
+            "notes": "范围严格 US；其他 hreflang 仅做指向校验，不扩写内容。"
+          },
+          {
+            "locale": "es-MX",
+            "task": "仅校验 hreflang_map 指向与 canonical 规则（不新增内容）。",
+            "notes": "若对应页面不存在，保留 [[SOURCE_REQUIRED]] 并在技术SEO阶段补齐。"
+          }
+        ],
+        "risks": [
+          "产品成分/含量/用法等 first-party 事实缺失会导致 FAQ/表格无法落地，需要补充来源。",
+          "US 合规：避免医疗化/处方/治愈承诺，需走 compliance checklist。"
+        ]
+      },
+      "writer_prompts": {
+        "prompt_page_rewrite": "你是 SEO+GEO 写手。国家范围严格 US。\n目标关键词：salicylic acid。页面：https://drleo.com/products/salicylic-acid-acne-clear-trio（pdp）。\n只使用给定 Facts/站内可验证信息；缺失处写 [[SOURCE_REQUIRED]]。\n输出：重写首屏（Hero + 首段），再写 3-5 个 H2 结构，覆盖用户意图与风险提示；避免医疗/治愈承诺。",
+        "prompt_comparison_tables": "为该页面生成对比表所需的“行/列/填充规则”。\n要求：Collection 至少 2 张表；PDP 至少 1 张表。\n不得编造产品参数；所有具体数值/成分/含量用 [[SOURCE_REQUIRED]] 占位并列出需要从哪里拿。",
+        "prompt_faq_geo_qa": "生成 GEO 友好的 FAQ：每条包含 Question/Answer/Citation 字段。\nAnswer 必须可引用、短句优先；无事实支撑则用 [[SOURCE_REQUIRED]]。\n范围：US。避免提及个人信息与敏感医疗建议。"
+      }
+    },
+    {
+      "rank": 2,
+      "page_type": "pdp",
+      "page_us": "https://drleo.com/products/salicylic-acid-acne-clearing-4-piece-set",
+      "hreflang_map": {
+        "x-default": "https://drleo.com/products/salicylic-acid-acne-clearing-4-piece-set",
+        "en": "https://drleo.com/products/salicylic-acid-acne-clearing-4-piece-set",
+        "es": "[[SOURCE_REQUIRED]]",
+        "en-MX": "[[SOURCE_REQUIRED]]",
+        "es-MX": "[[SOURCE_REQUIRED]]"
+      },
+      "why_this_page": "该 URL 来自 facts 中的站内页面清单；为 salicylic acid 相关产品页，适合作为 US 转化承接页进行 SEO+GEO 强化。",
+      "target_keywords": [
+        "salicylic acid",
+        "salicylic acid",
+        "niacinamide",
+        "benzoyl peroxide",
+        "retinol",
+        "acne treatment",
+        "cystic acne",
+        "fungal acne",
+        "hormonal acne",
+        "acne scars",
+        "blackheads"
+      ],
+      "actions": {
+        "hero_answer": {
+          "before": "[[CURRENT_HERO_COPY_REQUIRED]]",
+          "after": "US 用户常见问题：salicylic acid 适合什么肤质、如何开始、怎么避免刺激？\n这里提供可执行的基础 routine 框架（Cleanse → Treat → Moisturize → SPF），并把关键注意事项放在首屏。\n具体产品/用量/频率需以站内说明确认：[[SOURCE_REQUIRED]]",
+          "rationale": "用“先回答再引导”提升首屏相关性；把不确定的产品细节显式标记为需要来源，避免编造。"
+        },
+        "modules_checklist": [
+          "Hero 直接回答",
+          "对比表（Comparison tables）",
+          "FAQ（含 GEO 可引用答案）",
+          "HowTo / 使用步骤",
+          "Schema（FAQPage/HowTo/BreadcrumbList）",
+          "内部链接（Internal links）"
+        ],
+        "comparison_tables": [
+          {
+            "table_id": "tbl-pdp-1",
+            "purpose": "在 PDP 上用表格解释“这个产品/套组适合谁、如何搭配、替代方案是什么”，减少跳出并提升转化辅助",
+            "placement": "PDP 详情页：成分/用法模块之后，FAQ 之前",
+            "columns": [
+              "你在找什么",
+              "这款产品能提供什么",
+              "如何使用",
+              "不适合/注意",
+              "需要确认的数据"
+            ],
+            "rows": [
+              "控油与毛孔堵塞",
+              "黑头/闭口",
+              "点涂急救",
+              "与其他活性叠加",
+              "孕期/敏感肌"
+            ],
+            "data_requirements": [
+              "产品核心卖点与成分/含量（来自该 PDP）[[SOURCE_REQUIRED]]",
+              "使用步骤与频率（来自该 PDP/说明）[[SOURCE_REQUIRED]]",
+              "警示/禁忌（来自该 PDP/说明）[[SOURCE_REQUIRED]]"
+            ],
+            "render_notes": "行文避免承诺“治愈/消除/永久”；用“帮助减少/支持/可能改善”。"
+          }
+        ],
+        "faq_blocks": [
+          {
+            "question": "salicylic acid 和 benzoyl peroxide 的区别是什么？（US 用户最常问）",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "怎么把 salicylic acid 加入日常 routine（频率/顺序）？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "敏感肌/屏障受损时是否需要暂停活性？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          }
+        ],
+        "internal_links": [
+          {
+            "target": "https://drleo.com/pages/faqs",
+            "anchor_text": "FAQ / 常见问题",
+            "reason": "补足 first-party Q&A，提升可引用答案密度"
+          },
+          {
+            "target": "https://drleo.com/collections/acne-breakouts",
+            "anchor_text": "Acne & Breakouts 系列",
+            "reason": "建立从科普到购买的路径（US）"
+          }
+        ],
+        "schema": [
+          "FAQPage",
+          "BreadcrumbList",
+          "HowTo"
+        ],
+        "localization_tasks": [
+          {
+            "locale": "en",
+            "task": "US 主站（en）内容优先：确保首屏/FAQ/对比表覆盖目标词与用户问题词。",
+            "notes": "范围严格 US；其他 hreflang 仅做指向校验，不扩写内容。"
+          },
+          {
+            "locale": "es-MX",
+            "task": "仅校验 hreflang_map 指向与 canonical 规则（不新增内容）。",
+            "notes": "若对应页面不存在，保留 [[SOURCE_REQUIRED]] 并在技术SEO阶段补齐。"
+          }
+        ],
+        "risks": [
+          "产品成分/含量/用法等 first-party 事实缺失会导致 FAQ/表格无法落地，需要补充来源。",
+          "US 合规：避免医疗化/处方/治愈承诺，需走 compliance checklist。"
+        ]
+      },
+      "writer_prompts": {
+        "prompt_page_rewrite": "你是 SEO+GEO 写手。国家范围严格 US。\n目标关键词：salicylic acid。页面：https://drleo.com/products/salicylic-acid-acne-clearing-4-piece-set（pdp）。\n只使用给定 Facts/站内可验证信息；缺失处写 [[SOURCE_REQUIRED]]。\n输出：重写首屏（Hero + 首段），再写 3-5 个 H2 结构，覆盖用户意图与风险提示；避免医疗/治愈承诺。",
+        "prompt_comparison_tables": "为该页面生成对比表所需的“行/列/填充规则”。\n要求：Collection 至少 2 张表；PDP 至少 1 张表。\n不得编造产品参数；所有具体数值/成分/含量用 [[SOURCE_REQUIRED]] 占位并列出需要从哪里拿。",
+        "prompt_faq_geo_qa": "生成 GEO 友好的 FAQ：每条包含 Question/Answer/Citation 字段。\nAnswer 必须可引用、短句优先；无事实支撑则用 [[SOURCE_REQUIRED]]。\n范围：US。避免提及个人信息与敏感医疗建议。"
+      }
+    },
+    {
+      "rank": 3,
+      "page_type": "pdp",
+      "page_us": "https://drleo.com/products/dr-leo-salicylic-acid-acne-treatment-drying-lotion",
+      "hreflang_map": {
+        "x-default": "https://drleo.com/products/dr-leo-salicylic-acid-acne-treatment-drying-lotion",
+        "en": "https://drleo.com/products/dr-leo-salicylic-acid-acne-treatment-drying-lotion",
+        "es": "[[SOURCE_REQUIRED]]",
+        "en-MX": "[[SOURCE_REQUIRED]]",
+        "es-MX": "[[SOURCE_REQUIRED]]"
+      },
+      "why_this_page": "该 URL 来自 facts 中的站内页面清单；为 salicylic acid 相关产品页，适合作为 US 转化承接页进行 SEO+GEO 强化。",
+      "target_keywords": [
+        "salicylic acid",
+        "salicylic acid",
+        "niacinamide",
+        "benzoyl peroxide",
+        "retinol",
+        "acne treatment",
+        "cystic acne",
+        "fungal acne",
+        "hormonal acne",
+        "acne scars",
+        "blackheads"
+      ],
+      "actions": {
+        "hero_answer": {
+          "before": "[[CURRENT_HERO_COPY_REQUIRED]]",
+          "after": "US 用户常见问题：salicylic acid 适合什么肤质、如何开始、怎么避免刺激？\n这里提供可执行的基础 routine 框架（Cleanse → Treat → Moisturize → SPF），并把关键注意事项放在首屏。\n具体产品/用量/频率需以站内说明确认：[[SOURCE_REQUIRED]]",
+          "rationale": "用“先回答再引导”提升首屏相关性；把不确定的产品细节显式标记为需要来源，避免编造。"
+        },
+        "modules_checklist": [
+          "Hero 直接回答",
+          "对比表（Comparison tables）",
+          "FAQ（含 GEO 可引用答案）",
+          "HowTo / 使用步骤",
+          "Schema（FAQPage/HowTo/BreadcrumbList）",
+          "内部链接（Internal links）"
+        ],
+        "comparison_tables": [
+          {
+            "table_id": "tbl-pdp-1",
+            "purpose": "在 PDP 上用表格解释“这个产品/套组适合谁、如何搭配、替代方案是什么”，减少跳出并提升转化辅助",
+            "placement": "PDP 详情页：成分/用法模块之后，FAQ 之前",
+            "columns": [
+              "你在找什么",
+              "这款产品能提供什么",
+              "如何使用",
+              "不适合/注意",
+              "需要确认的数据"
+            ],
+            "rows": [
+              "控油与毛孔堵塞",
+              "黑头/闭口",
+              "点涂急救",
+              "与其他活性叠加",
+              "孕期/敏感肌"
+            ],
+            "data_requirements": [
+              "产品核心卖点与成分/含量（来自该 PDP）[[SOURCE_REQUIRED]]",
+              "使用步骤与频率（来自该 PDP/说明）[[SOURCE_REQUIRED]]",
+              "警示/禁忌（来自该 PDP/说明）[[SOURCE_REQUIRED]]"
+            ],
+            "render_notes": "行文避免承诺“治愈/消除/永久”；用“帮助减少/支持/可能改善”。"
+          }
+        ],
+        "faq_blocks": [
+          {
+            "question": "salicylic acid 和 benzoyl peroxide 的区别是什么？（US 用户最常问）",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "怎么把 salicylic acid 加入日常 routine（频率/顺序）？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "敏感肌/屏障受损时是否需要暂停活性？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          }
+        ],
+        "internal_links": [
+          {
+            "target": "https://drleo.com/pages/faqs",
+            "anchor_text": "FAQ / 常见问题",
+            "reason": "补足 first-party Q&A，提升可引用答案密度"
+          },
+          {
+            "target": "https://drleo.com/collections/acne-breakouts",
+            "anchor_text": "Acne & Breakouts 系列",
+            "reason": "建立从科普到购买的路径（US）"
+          }
+        ],
+        "schema": [
+          "FAQPage",
+          "BreadcrumbList",
+          "HowTo"
+        ],
+        "localization_tasks": [
+          {
+            "locale": "en",
+            "task": "US 主站（en）内容优先：确保首屏/FAQ/对比表覆盖目标词与用户问题词。",
+            "notes": "范围严格 US；其他 hreflang 仅做指向校验，不扩写内容。"
+          },
+          {
+            "locale": "es-MX",
+            "task": "仅校验 hreflang_map 指向与 canonical 规则（不新增内容）。",
+            "notes": "若对应页面不存在，保留 [[SOURCE_REQUIRED]] 并在技术SEO阶段补齐。"
+          }
+        ],
+        "risks": [
+          "产品成分/含量/用法等 first-party 事实缺失会导致 FAQ/表格无法落地，需要补充来源。",
+          "US 合规：避免医疗化/处方/治愈承诺，需走 compliance checklist。"
+        ]
+      },
+      "writer_prompts": {
+        "prompt_page_rewrite": "你是 SEO+GEO 写手。国家范围严格 US。\n目标关键词：salicylic acid。页面：https://drleo.com/products/dr-leo-salicylic-acid-acne-treatment-drying-lotion（pdp）。\n只使用给定 Facts/站内可验证信息；缺失处写 [[SOURCE_REQUIRED]]。\n输出：重写首屏（Hero + 首段），再写 3-5 个 H2 结构，覆盖用户意图与风险提示；避免医疗/治愈承诺。",
+        "prompt_comparison_tables": "为该页面生成对比表所需的“行/列/填充规则”。\n要求：Collection 至少 2 张表；PDP 至少 1 张表。\n不得编造产品参数；所有具体数值/成分/含量用 [[SOURCE_REQUIRED]] 占位并列出需要从哪里拿。",
+        "prompt_faq_geo_qa": "生成 GEO 友好的 FAQ：每条包含 Question/Answer/Citation 字段。\nAnswer 必须可引用、短句优先；无事实支撑则用 [[SOURCE_REQUIRED]]。\n范围：US。避免提及个人信息与敏感医疗建议。"
+      }
+    },
+    {
+      "rank": 4,
+      "page_type": "collection",
+      "page_us": "https://drleo.com/collections/acne-breakouts",
+      "hreflang_map": {
+        "x-default": "https://drleo.com/collections/acne-breakouts",
+        "en": "https://drleo.com/collections/acne-breakouts",
+        "es": "[[SOURCE_REQUIRED]]",
+        "en-MX": "[[SOURCE_REQUIRED]]",
+        "es-MX": "[[SOURCE_REQUIRED]]"
+      },
+      "why_this_page": "该 URL 来自 facts 中的站内页面清单；作为系列/集合页可承接更宽泛的市场词与问题词，适合放 2 张以上对比表与 FAQ。",
+      "target_keywords": [
+        "salicylic acid",
+        "salicylic acid",
+        "niacinamide",
+        "benzoyl peroxide",
+        "retinol",
+        "acne treatment",
+        "cystic acne",
+        "fungal acne",
+        "hormonal acne",
+        "acne scars",
+        "blackheads"
+      ],
+      "actions": {
+        "hero_answer": {
+          "before": "[[CURRENT_HERO_COPY_REQUIRED]]",
+          "after": "US 用户常见问题：salicylic acid 适合什么肤质、如何开始、怎么避免刺激？\n这里提供可执行的基础 routine 框架（Cleanse → Treat → Moisturize → SPF），并把关键注意事项放在首屏。\n具体产品/用量/频率需以站内说明确认：[[SOURCE_REQUIRED]]",
+          "rationale": "用“先回答再引导”提升首屏相关性；把不确定的产品细节显式标记为需要来源，避免编造。"
+        },
+        "modules_checklist": [
+          "Hero 直接回答",
+          "对比表（Comparison tables）",
+          "FAQ（含 GEO 可引用答案）",
+          "HowTo / 使用步骤",
+          "Schema（FAQPage/HowTo/BreadcrumbList）",
+          "内部链接（Internal links）"
+        ],
+        "comparison_tables": [
+          {
+            "table_id": "tbl-collection-1",
+            "purpose": "把用户常见需求/痛点与对应产品/套组快速映射，提升可用性与转化承接（US）",
+            "placement": "Collection 顶部首屏下方（在产品 grid 之前）",
+            "columns": [
+              "需求/问题",
+              "推荐品类/模块",
+              "适用肤质",
+              "使用频率",
+              "证据/来源"
+            ],
+            "rows": [
+              "Breakouts/痘痘频发",
+              "Blackheads/黑头",
+              "Oily skin/出油",
+              "敏感期修护",
+              "搭配防晒"
+            ],
+            "data_requirements": [
+              "每个推荐对应的具体产品/套组（handle）[[SOURCE_REQUIRED]]",
+              "关键成分/浓度/适用人群（来自官方 PDP）[[SOURCE_REQUIRED]]",
+              "禁忌/注意事项（来自官方）[[SOURCE_REQUIRED]]"
+            ],
+            "render_notes": "表格文案避免医疗/治愈承诺；以“帮助/可能/建议”表达，并保留免责声明占位。"
+          },
+          {
+            "table_id": "tbl-collection-2",
+            "purpose": "把竞品常见对比维度（成分类型/使用体验/组合搭配）结构化，支撑 SERP featured snippet / AI answer",
+            "placement": "Collection 中部（FAQ 之前）",
+            "columns": [
+              "维度",
+              "Salicylic acid (BHA)",
+              "Benzoyl peroxide",
+              "Retinoid",
+              "Niacinamide"
+            ],
+            "rows": [
+              "主要定位",
+              "适用场景",
+              "潜在刺激风险",
+              "与其他活性搭配注意"
+            ],
+            "data_requirements": [
+              "各活性定位与注意事项的权威来源（站内 facts 或官方说明）[[SOURCE_REQUIRED]]",
+              "站内产品线与这些活性对应关系 [[SOURCE_REQUIRED]]"
+            ],
+            "render_notes": "对比维度以科普为主，不点名竞品品牌，不做“最好/最强”绝对化描述。"
+          }
+        ],
+        "faq_blocks": [
+          {
+            "question": "salicylic acid 和 benzoyl peroxide 的区别是什么？（US 用户最常问）",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "怎么把 salicylic acid 加入日常 routine（频率/顺序）？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "敏感肌/屏障受损时是否需要暂停活性？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          }
+        ],
+        "internal_links": [
+          {
+            "target": "https://drleo.com/pages/faqs",
+            "anchor_text": "FAQ / 常见问题",
+            "reason": "补足 first-party Q&A，提升可引用答案密度"
+          },
+          {
+            "target": "https://drleo.com/collections/acne-breakouts",
+            "anchor_text": "Acne & Breakouts 系列",
+            "reason": "建立从科普到购买的路径（US）"
+          }
+        ],
+        "schema": [
+          "FAQPage",
+          "BreadcrumbList",
+          "HowTo"
+        ],
+        "localization_tasks": [
+          {
+            "locale": "en",
+            "task": "US 主站（en）内容优先：确保首屏/FAQ/对比表覆盖目标词与用户问题词。",
+            "notes": "范围严格 US；其他 hreflang 仅做指向校验，不扩写内容。"
+          },
+          {
+            "locale": "es-MX",
+            "task": "仅校验 hreflang_map 指向与 canonical 规则（不新增内容）。",
+            "notes": "若对应页面不存在，保留 [[SOURCE_REQUIRED]] 并在技术SEO阶段补齐。"
+          }
+        ],
+        "risks": [
+          "产品成分/含量/用法等 first-party 事实缺失会导致 FAQ/表格无法落地，需要补充来源。",
+          "US 合规：避免医疗化/处方/治愈承诺，需走 compliance checklist。"
+        ]
+      },
+      "writer_prompts": {
+        "prompt_page_rewrite": "你是 SEO+GEO 写手。国家范围严格 US。\n目标关键词：salicylic acid。页面：https://drleo.com/collections/acne-breakouts（collection）。\n只使用给定 Facts/站内可验证信息；缺失处写 [[SOURCE_REQUIRED]]。\n输出：重写首屏（Hero + 首段），再写 3-5 个 H2 结构，覆盖用户意图与风险提示；避免医疗/治愈承诺。",
+        "prompt_comparison_tables": "为该页面生成对比表所需的“行/列/填充规则”。\n要求：Collection 至少 2 张表；PDP 至少 1 张表。\n不得编造产品参数；所有具体数值/成分/含量用 [[SOURCE_REQUIRED]] 占位并列出需要从哪里拿。",
+        "prompt_faq_geo_qa": "生成 GEO 友好的 FAQ：每条包含 Question/Answer/Citation 字段。\nAnswer 必须可引用、短句优先；无事实支撑则用 [[SOURCE_REQUIRED]]。\n范围：US。避免提及个人信息与敏感医疗建议。"
+      }
+    },
+    {
+      "rank": 5,
+      "page_type": "collection",
+      "page_us": "https://drleo.com/collections/acne-series",
+      "hreflang_map": {
+        "x-default": "https://drleo.com/collections/acne-series",
+        "en": "https://drleo.com/collections/acne-series",
+        "es": "[[SOURCE_REQUIRED]]",
+        "en-MX": "[[SOURCE_REQUIRED]]",
+        "es-MX": "[[SOURCE_REQUIRED]]"
+      },
+      "why_this_page": "该 URL 来自 facts 中的站内页面清单；作为系列/集合页可承接更宽泛的市场词与问题词，适合放 2 张以上对比表与 FAQ。",
+      "target_keywords": [
+        "salicylic acid",
+        "salicylic acid",
+        "niacinamide",
+        "benzoyl peroxide",
+        "retinol",
+        "acne treatment",
+        "cystic acne",
+        "fungal acne",
+        "hormonal acne",
+        "acne scars",
+        "blackheads"
+      ],
+      "actions": {
+        "hero_answer": {
+          "before": "[[CURRENT_HERO_COPY_REQUIRED]]",
+          "after": "US 用户常见问题：salicylic acid 适合什么肤质、如何开始、怎么避免刺激？\n这里提供可执行的基础 routine 框架（Cleanse → Treat → Moisturize → SPF），并把关键注意事项放在首屏。\n具体产品/用量/频率需以站内说明确认：[[SOURCE_REQUIRED]]",
+          "rationale": "用“先回答再引导”提升首屏相关性；把不确定的产品细节显式标记为需要来源，避免编造。"
+        },
+        "modules_checklist": [
+          "Hero 直接回答",
+          "对比表（Comparison tables）",
+          "FAQ（含 GEO 可引用答案）",
+          "HowTo / 使用步骤",
+          "Schema（FAQPage/HowTo/BreadcrumbList）",
+          "内部链接（Internal links）"
+        ],
+        "comparison_tables": [
+          {
+            "table_id": "tbl-collection-1",
+            "purpose": "把用户常见需求/痛点与对应产品/套组快速映射，提升可用性与转化承接（US）",
+            "placement": "Collection 顶部首屏下方（在产品 grid 之前）",
+            "columns": [
+              "需求/问题",
+              "推荐品类/模块",
+              "适用肤质",
+              "使用频率",
+              "证据/来源"
+            ],
+            "rows": [
+              "Breakouts/痘痘频发",
+              "Blackheads/黑头",
+              "Oily skin/出油",
+              "敏感期修护",
+              "搭配防晒"
+            ],
+            "data_requirements": [
+              "每个推荐对应的具体产品/套组（handle）[[SOURCE_REQUIRED]]",
+              "关键成分/浓度/适用人群（来自官方 PDP）[[SOURCE_REQUIRED]]",
+              "禁忌/注意事项（来自官方）[[SOURCE_REQUIRED]]"
+            ],
+            "render_notes": "表格文案避免医疗/治愈承诺；以“帮助/可能/建议”表达，并保留免责声明占位。"
+          },
+          {
+            "table_id": "tbl-collection-2",
+            "purpose": "把竞品常见对比维度（成分类型/使用体验/组合搭配）结构化，支撑 SERP featured snippet / AI answer",
+            "placement": "Collection 中部（FAQ 之前）",
+            "columns": [
+              "维度",
+              "Salicylic acid (BHA)",
+              "Benzoyl peroxide",
+              "Retinoid",
+              "Niacinamide"
+            ],
+            "rows": [
+              "主要定位",
+              "适用场景",
+              "潜在刺激风险",
+              "与其他活性搭配注意"
+            ],
+            "data_requirements": [
+              "各活性定位与注意事项的权威来源（站内 facts 或官方说明）[[SOURCE_REQUIRED]]",
+              "站内产品线与这些活性对应关系 [[SOURCE_REQUIRED]]"
+            ],
+            "render_notes": "对比维度以科普为主，不点名竞品品牌，不做“最好/最强”绝对化描述。"
+          }
+        ],
+        "faq_blocks": [
+          {
+            "question": "salicylic acid 和 benzoyl peroxide 的区别是什么？（US 用户最常问）",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "怎么把 salicylic acid 加入日常 routine（频率/顺序）？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          },
+          {
+            "question": "敏感肌/屏障受损时是否需要暂停活性？",
+            "answer": "[[SOURCE_REQUIRED]]",
+            "citation": "[[SOURCE_REQUIRED]]"
+          }
+        ],
+        "internal_links": [
+          {
+            "target": "https://drleo.com/pages/faqs",
+            "anchor_text": "FAQ / 常见问题",
+            "reason": "补足 first-party Q&A，提升可引用答案密度"
+          },
+          {
+            "target": "https://drleo.com/collections/acne-breakouts",
+            "anchor_text": "Acne & Breakouts 系列",
+            "reason": "建立从科普到购买的路径（US）"
+          }
+        ],
+        "schema": [
+          "FAQPage",
+          "BreadcrumbList",
+          "HowTo"
+        ],
+        "localization_tasks": [
+          {
+            "locale": "en",
+            "task": "US 主站（en）内容优先：确保首屏/FAQ/对比表覆盖目标词与用户问题词。",
+            "notes": "范围严格 US；其他 hreflang 仅做指向校验，不扩写内容。"
+          },
+          {
+            "locale": "es-MX",
+            "task": "仅校验 hreflang_map 指向与 canonical 规则（不新增内容）。",
+            "notes": "若对应页面不存在，保留 [[SOURCE_REQUIRED]] 并在技术SEO阶段补齐。"
+          }
+        ],
+        "risks": [
+          "产品成分/含量/用法等 first-party 事实缺失会导致 FAQ/表格无法落地，需要补充来源。",
+          "US 合规：避免医疗化/处方/治愈承诺，需走 compliance checklist。"
+        ]
+      },
+      "writer_prompts": {
+        "prompt_page_rewrite": "你是 SEO+GEO 写手。国家范围严格 US。\n目标关键词：salicylic acid。页面：https://drleo.com/collections/acne-series（collection）。\n只使用给定 Facts/站内可验证信息；缺失处写 [[SOURCE_REQUIRED]]。\n输出：重写首屏（Hero + 首段），再写 3-5 个 H2 结构，覆盖用户意图与风险提示；避免医疗/治愈承诺。",
+        "prompt_comparison_tables": "为该页面生成对比表所需的“行/列/填充规则”。\n要求：Collection 至少 2 张表；PDP 至少 1 张表。\n不得编造产品参数；所有具体数值/成分/含量用 [[SOURCE_REQUIRED]] 占位并列出需要从哪里拿。",
+        "prompt_faq_geo_qa": "生成 GEO 友好的 FAQ：每条包含 Question/Answer/Citation 字段。\nAnswer 必须可引用、短句优先；无事实支撑则用 [[SOURCE_REQUIRED]]。\n范围：US。避免提及个人信息与敏感医疗建议。"
+      }
+    }
+  ],
+  "ranked_tasks": [
+    {
+      "rank": 1,
+      "task": "补齐 Top5 页面 first-party 事实包（成分/含量/用法/警示/适用人群）用于 FAQ 与对比表填充",
+      "owner": "PM/Brand",
+      "deadline": "2026-02-26",
+      "expected_impact": "减少 [[SOURCE_REQUIRED]] 占位，提升内容可发布性与合规通过率"
+    },
+    {
+      "rank": 2,
+      "task": "上线 Top5 页面：Hero 直接回答 + 对比表（Collection>=2, PDP>=1）+ FAQ + Schema",
+      "owner": "SEO/Content",
+      "deadline": "2026-03-05",
+      "expected_impact": "提升 SERP 可见性与 CTR；增强 AI answer 可引用内容"
+    },
+    {
+      "rank": 3,
+      "task": "US-only 内链：从 /pages/faqs 与 Acne 相关集合页导向 Top5 PDP；并从 PDP 回链到集合页",
+      "owner": "SEO/Dev",
+      "deadline": "2026-03-05",
+      "expected_impact": "提升爬取效率与主题聚类信号，增强转化路径"
+    },
+    {
+      "rank": 4,
+      "task": "建立 4 周观察：按 target_keyword 追踪 impressions/CTR/clicks 与页面转化辅助指标",
+      "owner": "Analytics",
+      "deadline": "2026-03-19",
+      "expected_impact": "形成迭代闭环：基于数据追加 FAQ 与对比维度"
+    }
+  ],
+  "copy_suggestions": {
+    "title_candidates": [
+      "salicylic acid: Practical Guide (2026)",
+      "How to choose a reliable salicylic acid routine",
+      "salicylic acid: what works and what to avoid"
+    ],
+    "meta_description": "[[SOURCE_REQUIRED]]",
+    "intro_snippet": "[[SOURCE_REQUIRED]]",
+    "cta_candidates": [
+      "Primary CTA: Start Quiz / Find your routine",
+      "Secondary CTA: Explore routine bundles"
+    ]
+  },
+  "geo_qa_blocks": [
+    {
+      "question": "US 用户最常见：salicylic acid 对黑头/闭口是否有帮助？",
+      "answer": "[[SOURCE_REQUIRED]]",
+      "citation": "[[SOURCE_REQUIRED]]"
+    },
+    {
+      "question": "US 用户：活性叠加（retinol/benzoyl peroxide/vitamin C）怎么避免刺激？",
+      "answer": "[[SOURCE_REQUIRED]]",
+      "citation": "[[SOURCE_REQUIRED]]"
+    }
+  ],
+  "schema_suggestions": [
+    "FAQPage",
+    "BreadcrumbList",
+    "HowTo"
+  ],
+  "internal_links": [
+    {
+      "source": "https://drleo.com/products/salicylic-acid-acne-clear-trio",
+      "target": "https://drleo.com/pages/faqs",
+      "anchor_text": "FAQ",
+      "reason": "补齐可引用问答与降低客服成本"
+    },
+    {
+      "source": "https://drleo.com/pages/faqs",
+      "target": "https://drleo.com/products/salicylic-acid-acne-clear-trio",
+      "anchor_text": "salicylic acid",
+      "reason": "从信息页回流到 US 主要承接页"
+    }
+  ],
+  "risks": [
+    "facts 中缺少可直接引用的产品参数/用法/警示，导致对比表与 FAQ 需要补齐来源。",
+    "US 合规：内容必须避免医疗建议与绝对化承诺；需要 compliance 审核。",
+    "hreflang_map 的非 US 版本在 facts 未验证存在，当前用 [[SOURCE_REQUIRED]] 占位，需技术SEO确认。"
+  ],
+  "guardrails": {
+    "country_scope": "US",
+    "no_pii": true,
+    "no_medical_claims": true,
+    "no_invented_facts": true,
+    "placeholder_token": "[[SOURCE_REQUIRED]]"
+  },
+  "first_party_placeholders": {
+    "customer_faq": "[[CUSTOMER_FAQ_PLACEHOLDER]]",
+    "usage_steps": "[[USAGE_STEPS_PLACEHOLDER]]",
+    "cautions": "[[CAUTIONS_PLACEHOLDER]]"
+  },
+  "compliance_checks": [
+    "US: 避免医疗化表述（治愈/治疗/处方/保证效果等）",
+    "US: 如涉及敏感人群（孕期/未成年人/皮肤疾病）必须给出“咨询专业人士”提示并引用来源",
+    "US: 不引用或暗示个人信息（邮箱/电话/地址/姓名）",
+    "US: 所有成分/含量/功效数据必须来自站内可验证来源，否则保留 [[SOURCE_REQUIRED]]"
+  ],
+  "generated_at": "2026-02-19"
+}

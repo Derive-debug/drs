@@ -1,0 +1,29 @@
+# ── Secrets ──
+.env
+.env.local
+data/.secrets/
+*-service-account*.json
+*.json.key
+google-ads.yaml
+.streamlit/secrets.toml
+
+# ── Data files ──
+# raw/ 永远不进 git（体积大 + 含原始敏感数据）
+data/raw/
+# clean/ 进 git，云端 Dashboard 依赖这些文件
+# ⚠️  确保私有仓库，不要把此目录改为公开
+data/clean/current/.snapshot_*/
+data/clean/archive/
+
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# ── macOS ──
+.DS_Store
+
+# ── IDE ──
+.vscode/
+.idea/

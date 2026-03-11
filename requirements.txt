@@ -1,0 +1,38 @@
+# ── Web / Dashboard ───────────────────────────────────────────
+streamlit==1.55.0
+altair==6.0.0
+pillow==12.1.1
+watchdog==6.0.0
+
+# ── Data ──────────────────────────────────────────────────────
+pandas==2.3.3
+numpy==2.4.2
+pyarrow==23.0.1
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+openpyxl==3.1.2
+
+# ── Cloud / Auth ──────────────────────────────────────────────────────────────
+supabase>=2.9.0
+psycopg2-binary>=2.9.9
+python-dotenv>=1.0.0
+streamlit-cookies-controller>=0.0.4
+
+# ── LLM ───────────────────────────────────────────────────────────────────────
+anthropic>=0.40.0
+
+# ── Google APIs ───────────────────────────────────────────────
+google-ads==29.1.0
+google-analytics-data==0.20.0
+google-api-python-client==2.190.0
+google-auth==2.48.0
+google-auth-httplib2==0.3.0
+google-auth-oauthlib==1.2.4
+
+# ── HTTP / Auth ───────────────────────────────────────────────
+requests==2.32.5
+requests-oauthlib==2.0.0
+python-dotenv==1.2.1
+
+# ── Timezone ──────────────────────────────────────────────────
+tzdata==2025.3
